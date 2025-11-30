@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 import { increaseHeading } from './increaseHeading';
 import { decreaseHeading } from './decreaseHeading';
-import { setHeading } from './setHeading';
+import { batchAdjustHeading } from './batchAdjustHeading';
 
 export function activate(context: vscode.ExtensionContext) {
     const increaseHeadingCommand = vscode.commands.registerCommand('extension.increaseHeading', () => {
@@ -12,13 +12,13 @@ export function activate(context: vscode.ExtensionContext) {
         decreaseHeading();
     });
 
-    const setHeadingCommand = vscode.commands.registerCommand('extension.setHeading', () => {
-        setHeading();
+    const batchAdjustHeadingCommand = vscode.commands.registerCommand('extension.batchAdjustHeading', () => {
+        batchAdjustHeading();
     });
 
     context.subscriptions.push(increaseHeadingCommand);
     context.subscriptions.push(decreaseHeadingCommand);
-    context.subscriptions.push(setHeadingCommand);
+    context.subscriptions.push(batchAdjustHeadingCommand);
 }
 
 export function deactivate() {}

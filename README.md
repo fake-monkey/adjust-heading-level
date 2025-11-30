@@ -9,9 +9,13 @@ This Visual Studio Code extension allows users to adjust the heading level of th
 1. Install the extension from the Visual Studio Code marketplace.
 2. Select the text you want to adjust the heading level for.
 3. Open the command palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS) and search for one of the following commands:
-   - `extension.increaseHeadingLevel`: Increase the heading level of the selected text.
-   - `extension.decreaseHeadingLevel`: Decrease the heading level of the selected text.
-   - `extension.setHeadingLevel`: Set the heading level of the selected text to a specific level.
+   - `Increase Heading Level`: Increase the heading level of the selected text.
+   - `Decrease Heading Level`: Decrease the heading level of the selected text.
+   - `Batch Adjust Heading Level`: Batch adjust the heading level of the selected text by a specific shift.
+
+## Key Features
+
+This plugin smartly skips # symbols within code blocks and inline code when adjusting Markdown heading levels, ensuring only real headings are modified.
 
 ## Development Guide
 

@@ -8,13 +8,5 @@ export async function decreaseHeading() {
         return;
     }
 
-    const document = editor.document;
-    const selection = editor.selection;
-    const selectedText = document.getText(selection);
-
-    const adjustedText = adjustHeadingLevel(selectedText, -1);
-
-    await editor.edit((editBuilder) => {
-        editBuilder.replace(selection, adjustedText);
-    });
+    adjustHeadingLevel(-1);
 }
