@@ -1,10 +1,10 @@
 {
-  "name": "adjust-heading-level",
-  "displayName": "Markdown Header Adjustor",
-  "description": "A VSCode extension to adjust the heading level of the selected text",
-  "publisher": "dendron",
+  "name": "structure_aware_markdown_headings",
+  "displayName": "Structure-Aware Markdown Headings",
+  "description": "Intelligent Markdown heading adjustment using document structure analysis.",
+  "publisher": "false_ape",
   "repository": {
-    "url": "https://github.com/kevinslin/adjust-heading-level.git"
+    "url": "https://github.com/fake-monkey/adjust-heading-level.git"
   },
   "license": "Apache-2.0",
   "version": "0.1.0",
@@ -23,17 +23,17 @@
       {
         "command": "extension.increaseHeading",
         "title": "Increase Heading Level",
-        "category": "Markdown Header Adjustor"
+        "category": "Structure-Aware Markdown Headings"
       },
       {
         "command": "extension.decreaseHeading",
         "title": "Decrease Heading Level",
-        "category": "Markdown Header Adjustor"
+        "category": "Structure-Aware Markdown Headings"
       },
       {
         "command": "extension.batchAdjustHeading",
         "title": "Batch Adjust Heading Level",
-        "category": "Markdown Header Adjustor"
+        "category": "Structure-Aware Markdown Headings"
       }
     ]
   },
