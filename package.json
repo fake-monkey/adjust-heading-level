@@ -8,7 +8,7 @@
     "url": "https://github.com/fake-monkey/adjust-heading-level.git"
   },
   "license": "Apache-2.0",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "engines": {
     "vscode": "^1.62.0"
   },

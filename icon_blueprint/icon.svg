@@ -1,0 +1,13 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hash symbol (#) for Markdown heading -->
+  <text x="16" y="72" font-family="Courier, monospace" font-size="80" fill="#007ACC" font-weight="bold">#</text>
+  
+  <!-- Vertical line for the arrow shaft -->
+  <line x1="80" y1="36" x2="80" y2="92" stroke="#007ACC" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Up arrowhead -->
+  <path d="M80 32 L64 44 L96 44 Z" fill="#007ACC"/>
+  
+  <!-- Down arrowhead -->
+  <path d="M80 96 L64 84 L96 84 Z" fill="#007ACC"/>
+</svg>
