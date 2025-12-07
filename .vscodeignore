@@ -12,3 +12,5 @@
 
 # 3. Compiled code directory (mandatory! Please confirm your directory name)
 !out/**/*.js
+
+!icon.png
