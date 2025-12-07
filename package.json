@@ -1,8 +1,8 @@
 {
-  "name": "structure_aware_markdown_headings",
+  "name": "structure-aware-markdown-headings",
   "displayName": "Structure-Aware Markdown Headings",
   "description": "Intelligent Markdown heading adjustment using document structure analysis.",
-  "publisher": "false_ape",
+  "publisher": "false-ape",
   "repository": {
     "url": "https://github.com/fake-monkey/adjust-heading-level.git"
   },
