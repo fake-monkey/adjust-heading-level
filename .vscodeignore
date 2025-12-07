@@ -1,0 +1,14 @@
+# Firstly, ignore all files and folders
+**
+
+# Then, one by one, include the files and directories necessary for the plugin to run
+
+# 1. Plugin List (Required)
+!package.json
+
+# 2. Documents and licenses (recommended)
+!README.md
+!LICENSE.md
+
+# 3. Compiled code directory (mandatory! Please confirm your directory name)
+!out/**/*.js
