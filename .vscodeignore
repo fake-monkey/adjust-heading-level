@@ -8,6 +8,7 @@
 
 # 2. Documents and licenses (recommended)
 !README.md
+!README.zh-CN.md
 !LICENSE.md
 
 # 3. Compiled code directory (mandatory! Please confirm your directory name)
