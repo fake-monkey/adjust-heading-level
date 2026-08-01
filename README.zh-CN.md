@@ -34,6 +34,8 @@
    - `preLaunchTask` 设置为 `npm: compile`。
 4. 按 `F5`，或在“运行”菜单中选择“启动调试”，以开发模式运行插件。
 5. 如需运行测试，请打开命令面板并搜索 `Tasks: Run Test Task`，然后选择 `npm: test`。
+6. 需要发布新版本时，运行 `npm version patch --no-git-tag-version` 将补丁版本号加一。该命令会同步更新 `package.json` 和 `package-lock.json`，但不会创建 Git 提交或标签。
+7. 运行 `npm run package:vsix` 安装依赖、编译插件并生成 VSIX 发布包，然后将生成的 `.vsix` 文件手动上传到 Visual Studio Marketplace。
 
 ## 致谢
 

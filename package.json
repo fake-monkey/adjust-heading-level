@@ -8,7 +8,7 @@
     "url": "https://github.com/fake-monkey/adjust-heading-level.git"
   },
   "license": "Apache-2.0",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "engines": {
     "vscode": "^1.62.0"
   },
@@ -40,6 +40,7 @@
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
+    "package:vsix": "npm install && npx @vscode/vsce package",
     "clean": "rimraf out",
     "compile": "npm run clean && tsc -p ./",
     "watch": "tsc -watch -p ./"
