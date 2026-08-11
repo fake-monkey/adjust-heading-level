@@ -41,7 +41,7 @@
   },
   "scripts": {
     "vscode:prepublish": "pnpm run compile",
-    "package:vsix": "pnpm install --frozen-lockfile && pnpm dlx @vscode/vsce package",
+    "package:vsix": "pnpm install && vsce package",
     "clean": "rimraf out",
     "compile": "pnpm run clean && tsc -p ./",
     "watch": "tsc -watch -p ./"

@@ -1,5 +1,19 @@
 # 开发指南
 
+## 环境准备
+
+项目使用 pnpm 管理与代码直接相关的依赖。除此之外，开发和发布流程还会调用以下全局工具：
+
+- `rimraf`：清理编译输出目录，供 `clean` 和 `compile` 脚本使用。
+- `@vscode/vsce`：将扩展打包为 VSIX，供 `package:vsix` 脚本使用；安装后的命令名为 `vsce`。该工具必须使用 npm 全局安装，避免其 secretlint 依赖在 pnpm 全局隔离布局下无法解析。
+
+分别使用对应的包管理器全局安装：
+
+```powershell
+pnpm add --global rimraf
+npm install --global @vscode/vsce
+```
+
 ## 本地开发
 
 1. 克隆本仓库，并使用 Visual Studio Code 打开项目。
