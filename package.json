@@ -9,6 +9,7 @@
   },
   "license": "Apache-2.0",
   "version": "0.2.3",
+  "packageManager": "pnpm@11.21.0",
   "engines": {
     "vscode": "^1.62.0"
   },
@@ -39,10 +40,10 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "package:vsix": "npm install && npx @vscode/vsce package",
+    "vscode:prepublish": "pnpm run compile",
+    "package:vsix": "pnpm install --frozen-lockfile && pnpm dlx @vscode/vsce package",
     "clean": "rimraf out",
-    "compile": "npm run clean && tsc -p ./",
+    "compile": "pnpm run clean && tsc -p ./",
     "watch": "tsc -watch -p ./"
   },
   "devDependencies": {
